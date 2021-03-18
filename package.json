@@ -1,0 +1,10 @@
+{
+  "name": "tc-eslint-config",
+  "version": "1.0.0",
+  "description": "Thomas Clark's preferred eslint configuration",
+  "main": "index.js",
+  "repository": "https://github.com/TClark1011/tc-eslint-config",
+  "author": "Thomas Clark <48699309+TClark1011@users.noreply.github.com>",
+  "license": "MIT",
+  "private": false
+}
