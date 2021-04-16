@@ -9,7 +9,7 @@ module.exports = {
 		"ecmaVersion": 12,
 		"sourceType": "module",
 	},
-	"plugins": ["@typescript-eslint", "jsdoc", "prefer-arrow"],
+	"plugins": ["@typescript-eslint", "jsdoc", "prefer-arrow", "no-secret"],
 	"rules": {
 		"indent": [
 			"error",
@@ -47,5 +47,6 @@ module.exports = {
 				"classPropertiesAllowed": false,
 			},
 		],
+		"no-secrets/no-secrets": "error",
 	},
 };
