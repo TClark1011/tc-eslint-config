@@ -4,6 +4,7 @@ module.exports = {
 		"plugin:@typescript-eslint/recommended",
 		"plugin:jsdoc/recommended",
 		"plugin:promise/recommended",
+		"plugin:radar/recommended",
 	],
 	"parser": "@typescript-eslint/parser",
 	"parserOptions": {
@@ -16,6 +17,7 @@ module.exports = {
 		"prefer-arrow",
 		"no-secret",
 		"promise",
+		"radar",
 	],
 	"rules": {
 		"indent": [
