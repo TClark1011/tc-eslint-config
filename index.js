@@ -36,7 +36,7 @@ module.exports = {
 		"brace-style": "error",
 		"no-mixed-spaces-and-tabs": "off",
 		"no-useless-escape": "off",
-		//# jsdoc Rules
+		//# "jsdoc" rules
 		"jsdoc/require-jsdoc": [
 			"error",
 			{
@@ -53,7 +53,7 @@ module.exports = {
 		],
 		"jsdoc/no-undefined-types": "off",
 		"jsdoc/no-types": ["error"],
-		//# prefer arrow function rules
+		//# "prefer arrow function" rules
 		"prefer-arrow/prefer-arrow-functions": [
 			"error",
 			{
@@ -62,6 +62,7 @@ module.exports = {
 				classPropertiesAllowed: false,
 			},
 		],
+		//# "no secret" plugin rule
 		"no-secrets/no-secrets": "error",
 	},
 };
