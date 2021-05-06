@@ -36,6 +36,7 @@ module.exports = {
 		"brace-style": "error",
 		"no-mixed-spaces-and-tabs": "off",
 		"no-useless-escape": "off",
+		"no-warning-comments": "warn",
 		//# "jsdoc" rules
 		"jsdoc/require-jsdoc": [
 			"error",
