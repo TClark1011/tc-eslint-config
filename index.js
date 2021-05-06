@@ -3,13 +3,22 @@ module.exports = {
 		"eslint:recommended",
 		"plugin:@typescript-eslint/recommended",
 		"plugin:jsdoc/recommended",
+		"plugin:promise/recommended",
+		"plugin:radar/recommended",
 	],
 	"parser": "@typescript-eslint/parser",
 	"parserOptions": {
 		"ecmaVersion": 12,
 		"sourceType": "module",
 	},
-	"plugins": ["@typescript-eslint", "jsdoc", "prefer-arrow", "no-secret"],
+	"plugins": [
+		"@typescript-eslint",
+		"jsdoc",
+		"prefer-arrow",
+		"no-secret",
+		"promise",
+		"radar",
+	],
 	"rules": {
 		"indent": [
 			"error",
@@ -21,32 +30,39 @@ module.exports = {
 			},
 		],
 		"linebreak-style": "off",
-		"quotes": ["error", "double"],
-		"semi": ["error", "always"],
+		quotes: ["error", "double"],
+		semi: ["error", "always"],
 		"prefer-arrow-callback": ["error"],
 		"brace-style": "error",
 		"no-mixed-spaces-and-tabs": "off",
 		"no-useless-escape": "off",
-		//# jsdoc Rules
+		//# "jsdoc" rules
 		"jsdoc/require-jsdoc": [
 			"error",
 			{
-				"require": {
-					"ArrowFunctionExpression": true,
-					"FunctionDeclaration": true,
+				require: {
+					ArrowFunctionExpression: true,
+					FunctionDeclaration: true,
 				},
+				contexts: [
+					"TSInterfaceDeclaration",
+					"TSTypeAliasDeclaration",
+					"TSEnumDeclaration",
+				],
 			},
 		],
 		"jsdoc/no-undefined-types": "off",
-		//# prefer arrow function rules
+		"jsdoc/no-types": ["error"],
+		//# "prefer arrow function" rules
 		"prefer-arrow/prefer-arrow-functions": [
 			"error",
 			{
-				"disallowPrototype": true,
-				"singleReturnOnly": false,
-				"classPropertiesAllowed": false,
+				disallowPrototype: true,
+				singleReturnOnly: false,
+				classPropertiesAllowed: false,
 			},
 		],
+		//# "no secret" plugin rule
 		"no-secrets/no-secrets": "error",
 	},
 };
