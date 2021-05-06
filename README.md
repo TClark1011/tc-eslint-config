@@ -19,6 +19,7 @@ These are some of the most notable rules used in this configuration:
 - **Quotes:** Double quotes. Exceptions are allowed for backticks when using template strings. Single quotes can also be used if the string contains double quotes within it.
 - **Indent:** Tab indentation.
 - **Semicolon:** Must always use semicolon and end of lines.
+- **No Warning Comments:** "Warning" comments that begin with either `//TODO` or `//FIXME` will throw warnings. This helps remind you of work you need to finish.
 
 ## Usage
 
