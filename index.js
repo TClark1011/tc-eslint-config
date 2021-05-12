@@ -37,6 +37,7 @@ module.exports = {
 		"no-mixed-spaces-and-tabs": "off",
 		"no-useless-escape": "off",
 		"no-warning-comments": "warn",
+		"prefer-const": "error",
 		//# "jsdoc" rules
 		"jsdoc/require-jsdoc": [
 			"error",
