@@ -15,7 +15,7 @@ module.exports = {
 		"@typescript-eslint",
 		"jsdoc",
 		"prefer-arrow",
-		"no-secret",
+		"no-secrets",
 		"promise",
 		"radar",
 	],
