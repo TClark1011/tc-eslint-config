@@ -21,17 +21,36 @@ These are some of the most notable rules used in this configuration:
 - **Semicolon:** Must always use semicolon and end of lines.
 - **No Warning Comments:** "Warning" comments that begin with either `//TODO` or `//FIXME` will throw warnings. This helps remind you of work you need to finish.
 
-## Usage
+## ESLint Setup
 
-### 1. Add Package:
+If you have already setup eslint, skip to step 4.
+
+## 1. Install Base Packages
+
+`yarn add --dev eslint prettier prettier-eslint`
+
+## 2. Setup Initial ESLint
+
+`yarn run eslint --init`
+
+Select the most minimal setup option
+
+## 3. Setup Prettier Config
+
+Create a file name `.prettierrc` and copy the following into it:
+
+```json
+{
+	"singleQuote": false,
+	"useTabs": true
+}
+```
+
+### 4. Add Config Package:
 
 `yarn add --dev eslint-config-thomas-clark`
 
-### 2. Setup eslint:
-
-`eslint --init`
-
-### 3. Extend config:
+### 5. Extend config:
 
 Inside eslint config:
 
@@ -43,7 +62,7 @@ extends: [
 ]
 ```
 
-### 4. (Optional) Extra Configuration:
+### 6. (Optional) Extra Configuration:
 
 These are some changes you may want to make to the rules. Add these inside the "rules" section of eslint config.
 
