@@ -40,16 +40,31 @@ module.exports = {
 		"prefer-const": "error",
 		//# "jsdoc" rules
 		"jsdoc/require-jsdoc": [
-			"error",
+			"warn",
 			{
 				require: {
-					ArrowFunctionExpression: true,
-					FunctionDeclaration: true,
+					"ArrowFunctionExpression": true,
+					"ClassDeclaration": true,
+					"ClassExpression": true,
+					"FunctionDeclaration": true,
+					"FunctionExpression": true,
+					"MethodDefinition": true,
 				},
 				contexts: [
-					"TSInterfaceDeclaration",
-					"TSTypeAliasDeclaration",
+					"ArrowFunctionExpression",
+					"ClassDeclaration",
+					"ClassExpression",
+					"ClassProperty",
+					"FunctionDeclaration", // function
+					"FunctionExpression",
+					"MethodDefinition",
+					"TSDeclareFunction", // function without body
 					"TSEnumDeclaration",
+					"TSInterfaceDeclaration",
+					"TSMethodSignature",
+					"TSModuleDeclaration", // namespace
+					"TSTypeAliasDeclaration",
+					"VariableDeclaration",
 				],
 			},
 		],
