@@ -38,6 +38,7 @@ module.exports = {
 		"no-useless-escape": "off",
 		"no-warning-comments": "warn",
 		"prefer-const": "error",
+		"max-len": ["warn", { "comments": 60, "code": 100 }],
 		//# "jsdoc" rules
 		"jsdoc/require-jsdoc": [
 			"warn",
