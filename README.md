@@ -20,6 +20,7 @@ These are some of the most notable rules used in this configuration:
 - **Indent:** Tab indentation.
 - **Semicolon:** Must always use semicolon and end of lines.
 - **No Warning Comments:** "Warning" comments that begin with either `//TODO` or `//FIXME` will throw warnings. This helps remind you of work you need to finish.
+- **No Mutating Methods:** Methods of arrays or objects that perform mutations will trigger warnings
 
 ## ESLint Setup
 
