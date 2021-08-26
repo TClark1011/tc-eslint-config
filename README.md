@@ -72,3 +72,8 @@ These are some changes you may want to make to the rules. Add these inside the "
 ```javascript
 "jsdoc/require-jsdoc": "off"
 ```
+
+#### Allow Mutating Methods
+```javascript
+"fp/no-mutating-methods": "off",
+```
