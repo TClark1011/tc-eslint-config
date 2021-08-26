@@ -18,6 +18,7 @@ module.exports = {
 		"no-secrets",
 		"promise",
 		"radar",
+		"fp"
 	],
 	"rules": {
 		"indent": [
@@ -82,5 +83,7 @@ module.exports = {
 		],
 		//# "no secret" plugin rule
 		"no-secrets/no-secrets": "error",
+		//# "fp" plugin rules
+		"fp/no-mutating-methods": "warn",
 	},
 };
