@@ -40,6 +40,10 @@ module.exports = {
 		"no-warning-comments": "warn",
 		"prefer-const": "error",
 		"max-len": ["warn", { "comments": 60, "code": "off" }],
+		//# Typescript rules
+		"@typescript-eslint/no-explicit-any": "off",
+		"@typescript-eslint/ban-types": "off",
+		"@typescript-eslint/no-namespace": "off",
 		//# "jsdoc" rules
 		"jsdoc/require-jsdoc": [
 			"warn",
