@@ -18,7 +18,7 @@ module.exports = {
 		"no-secrets",
 		"promise",
 		"radar",
-		"fp"
+		"fp",
 	],
 	"rules": {
 		"indent": [
@@ -39,7 +39,7 @@ module.exports = {
 		"no-useless-escape": "off",
 		"no-warning-comments": "warn",
 		"prefer-const": "error",
-		"max-len": ["warn", { "comments": 60, "code": 100 }],
+		"max-len": ["warn", { "comments": 60, "code": "off" }],
 		//# "jsdoc" rules
 		"jsdoc/require-jsdoc": [
 			"warn",
@@ -84,6 +84,6 @@ module.exports = {
 		//# "no secret" plugin rule
 		"no-secrets/no-secrets": "error",
 		//# "fp" plugin rules
-		"fp/no-mutating-methods": "warn",
+		"fp/no-mutating-methods": ["error"],
 	},
 };
