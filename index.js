@@ -39,7 +39,7 @@ module.exports = {
 		"no-useless-escape": "off",
 		"no-warning-comments": "warn",
 		"prefer-const": "error",
-		"max-len": ["warn", { "comments": 60, "code": "off" }],
+		"max-len": ["warn", { "comments": 60, "code": 9999 }],
 		//# Typescript rules
 		"@typescript-eslint/no-explicit-any": "off",
 		"@typescript-eslint/ban-types": "off",
