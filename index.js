@@ -19,6 +19,7 @@ module.exports = {
 		"promise",
 		"radar",
 		"fp",
+		"prettier"
 	],
 	"rules": {
 		"indent": [
