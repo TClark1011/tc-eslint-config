@@ -19,7 +19,8 @@ module.exports = {
 		"promise",
 		"radar",
 		"fp",
-		"prettier"
+		"prettier",
+		"const-case",
 	],
 	"rules": {
 		"indent": [
@@ -90,5 +91,7 @@ module.exports = {
 		"no-secrets/no-secrets": "error",
 		//# "fp" plugin rules
 		"fp/no-mutating-methods": ["error"],
+		//# static const uppercase name rule
+		"const-case/uppercase": "error",
 	},
 };

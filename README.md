@@ -75,5 +75,16 @@ These are some changes you may want to make to the rules. Add these inside the "
 
 #### Allow Mutating Methods
 ```javascript
-"fp/no-mutating-methods": "off",
+"fp/no-mutating-methods": "off"
+```
+
+#### Change to Single Quotes
+
+```javascript
+quotes: ["error", "single"]
+```
+
+#### Disable Static const Naming Scheme
+```javascript
+"const-case/uppercase": "off"
 ```
