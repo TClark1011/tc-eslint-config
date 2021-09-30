@@ -5,6 +5,7 @@ module.exports = {
 		"plugin:jsdoc/recommended",
 		"plugin:promise/recommended",
 		"plugin:radar/recommended",
+		"prettier",
 	],
 	"parser": "@typescript-eslint/parser",
 	"parserOptions": {
@@ -19,7 +20,6 @@ module.exports = {
 		"promise",
 		"radar",
 		"fp",
-		"prettier",
 		"const-case",
 	],
 	"rules": {
