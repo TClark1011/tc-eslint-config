@@ -19,7 +19,7 @@ This config uses the following plugins:
 
 ## Rules
 
-These are some of the most notable rules used in this configuration:
+This eslint config extends the airbnb 'base' config and its corresponding typescript extension and also has its own rules: These are some of the most notable rules used in this configuration:
 
 - **Quotes:** Double quotes. Exceptions are allowed for backticks when using template strings. Single quotes can also be used if the string contains double quotes within it.
 - **Indent:** Tab indentation.
@@ -68,6 +68,9 @@ extends: [
 	.../* any higher priority extended configs here */
 ]
 ```
+
+### 6. Point to TS Config
+
 
 ### 6. Browserlist
 To make use of the `compat` eslint plugin you must fill out the `"browserlist"` key in your `package.json`. or in their own file. Instructions [here](https://github.com/browserslist/browserslist).****

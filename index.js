@@ -6,7 +6,9 @@ module.exports = {
 		"plugin:promise/recommended",
 		"plugin:radar/recommended",
 		"plugin:compat/recommended",
-		"prettier",
+		"airbnb-base",
+		'airbnb-typescript/base',
+		"prettier"
 	],
 	"parser": "@typescript-eslint/parser",
 	"parserOptions": {
