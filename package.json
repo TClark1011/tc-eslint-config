@@ -7,10 +7,17 @@
 	"author": "Thomas Clark <48699309+TClark1011@users.noreply.github.com>",
 	"license": "MIT",
 	"private": false,
+	"scripts": {
+		"check:ts": "eslint --print-config test/index.ts",
+		"check:tsx": "eslint --print-config test/index.tsx",
+		"check:js": "eslint --print-config test/index.js",
+		"check:jsx": "eslint --print-config test/index.jsx"
+	},
 	"dependencies": {
 		"@typescript-eslint/eslint-plugin": "^4.18.0",
 		"@typescript-eslint/parser": "^4.18.0",
 		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-compat": "^3.13.0",
 		"eslint-plugin-const-case": "^1.2.2",
 		"eslint-plugin-fp": "^2.3.0",
 		"eslint-plugin-jsdoc": "^32.3.0",
@@ -21,5 +28,9 @@
 	},
 	"peerDependencies": {
 		"eslint": "^7.22.0"
+	},
+	"devDependencies": {
+		"eslint": "^7.32.0",
+		"typescript": "^4.4.3"
 	}
 }
