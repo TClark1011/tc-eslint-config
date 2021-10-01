@@ -43,6 +43,7 @@ module.exports = {
 		"no-warning-comments": "warn",
 		"prefer-const": "error",
 		"max-len": ["warn", { "comments": 60, "code": 80 }],
+		"arrow-body-style": ["error", "as-needed"],
 		//# Typescript rules
 		"@typescript-eslint/no-explicit-any": "off",
 		"@typescript-eslint/ban-types": "off",
