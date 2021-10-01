@@ -6,8 +6,9 @@ module.exports = {
 		"plugin:promise/recommended",
 		"plugin:radar/recommended",
 		"plugin:compat/recommended",
-		"airbnb-base",
-		'airbnb-typescript/base',
+		"airbnb",
+		"airbnb/hooks",
+		'airbnb-typescript',
 		"prettier"
 	],
 	"parser": "@typescript-eslint/parser",
@@ -46,10 +47,14 @@ module.exports = {
 		"prefer-const": "error",
 		"max-len": ["warn", { "comments": 60, "code": 80 }],
 		"arrow-body-style": ["error", "as-needed"],
+		//# Override specific airbnb rules
+		"react/jsx-props-no-spreading": "off",
 		//# Typescript rules
 		"@typescript-eslint/no-explicit-any": "off",
 		"@typescript-eslint/ban-types": "off",
 		"@typescript-eslint/no-namespace": "off",
+		"@typescript-eslint/explicit-function-return-type": "off",
+		"@typescript-eslint/explicit-module-boundary-type": "off",
 		//# "jsdoc" rules
 		"jsdoc/require-jsdoc": [
 			"warn",
