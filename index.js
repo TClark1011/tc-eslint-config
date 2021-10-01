@@ -5,6 +5,7 @@ module.exports = {
 		"plugin:jsdoc/recommended",
 		"plugin:promise/recommended",
 		"plugin:radar/recommended",
+		"plugin:compat/recommended",
 		"prettier",
 	],
 	"parser": "@typescript-eslint/parser",
