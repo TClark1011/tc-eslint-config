@@ -8,8 +8,8 @@ module.exports = {
 		"plugin:compat/recommended",
 		"airbnb",
 		"airbnb/hooks",
-		'airbnb-typescript',
-		"prettier"
+		"airbnb-typescript",
+		"prettier",
 	],
 	"parser": "@typescript-eslint/parser",
 	"parserOptions": {
@@ -49,6 +49,8 @@ module.exports = {
 		"arrow-body-style": ["error", "as-needed"],
 		//# Override specific airbnb rules
 		"react/jsx-props-no-spreading": "off",
+		"react/jsx-props-no-spreading": "off",
+		"react/prop-types": "off",
 		//# Typescript rules
 		"@typescript-eslint/no-explicit-any": "off",
 		"@typescript-eslint/ban-types": "off",

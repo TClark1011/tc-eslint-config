@@ -71,15 +71,37 @@ extends: [
 
 ### 6. Point to TS Config
 
+Add this to the root level of your eslint config file:
 
-### 6. Browserlist
-To make use of the `compat` eslint plugin you must fill out the `"browserlist"` key in your `package.json`. or in their own file. Instructions [here](https://github.com/browserslist/browserslist).****
+```javascript
+overrides: [
+		{
+			files: ['*.ts', '*.tsx'],
+			parserOptions: {
+				project: ['./tsconfig.json'],
+			},
+		},
+	],
+```
 
-### 7. (Optional) Extra Configuration:
+
+### 7. Browserlist
+To make use of the `compat` eslint plugin you must fill out the `"browserlist"` key in your `package.json`. or in their own file. Instructions [here](https://github.com/browserslist/browserslist).
+
+You can also disable `compat` by adding this to your rules:
+
+```json
+'compat/compat': 'off',
+```
+
+### 8. (Optional) Extra Configuration:
 
 These are some changes you may want to make to the rules. Add these inside the "rules" section of eslint config.
 
-You 
+#### No React In Scope (Required if using NextJS)
+```javascript
+'react/react-in-jsx-scope': 'off',
+```
 
 #### Disable jsdoc requirement:
 
@@ -102,3 +124,4 @@ quotes: ["error", "single"]
 ```javascript
 "const-case/uppercase": "off"
 ```
+
