@@ -101,7 +101,12 @@ module.exports = {
 		//# "no secret" plugin rule
 		"no-secrets/no-secrets": "error",
 		//# "fp" plugin rules
-		"fp/no-mutating-methods": ["error"],
+		"fp/no-mutating-methods": [
+			"error",
+			{
+				allowedObjects: ["_", "R", "fp", "router"],
+			},
+		],
 		//# static const uppercase name rule
 		"const-case/uppercase": "error",
 	},
