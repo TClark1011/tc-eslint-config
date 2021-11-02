@@ -69,6 +69,8 @@ extends: [
 ]
 ```
 
+**Note:** If you have any other configs with a higher priority than this one, then you should add `"prettier"` as the highest priority config. This config already includes the prettier extension, however it will be overridden by any higher priority configs and as such should be added independently at the end in that situation to make sure any conflicts between eslint and prettier are avoided.
+
 ### 6. Point to TS Config
 
 Add this to the root level of your eslint config file:
