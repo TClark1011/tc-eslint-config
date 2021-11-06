@@ -109,5 +109,8 @@ module.exports = {
 		],
 		//# static const uppercase name rule
 		"const-case/uppercase": "error",
+		//# No unused variables
+		"no-unused-vars": "off",
+		"@typescript-eslint/no-unused-vars": ["error"],
 	},
 };
