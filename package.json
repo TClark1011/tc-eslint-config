@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-thomas-clark",
-	"version": "2.1.2",
+	"version": "2.2.0",
 	"description": "Thomas Clark's preferred eslint configuration",
 	"main": "index.js",
 	"repository": "https://github.com/TClark1011/tc-eslint-config",
