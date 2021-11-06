@@ -93,6 +93,8 @@ module.exports = {
 		],
 		"jsdoc/no-undefined-types": "off",
 		"jsdoc/no-types": ["error"],
+		"jsdoc/require-param-type": "off",
+		"jsdoc/require-returns-type": "off",
 		//# "prefer arrow function" rules
 		"prefer-arrow/prefer-arrow-functions": [
 			"error",
