@@ -51,7 +51,6 @@ module.exports = {
 		"arrow-body-style": ["error", "as-needed"],
 		//# Override specific airbnb rules
 		"react/jsx-props-no-spreading": "off",
-		"react/jsx-props-no-spreading": "off",
 		"react/prop-types": "off",
 		//# Typescript rules
 		"@typescript-eslint/no-explicit-any": "off",
@@ -59,6 +58,11 @@ module.exports = {
 		"@typescript-eslint/no-namespace": "off",
 		"@typescript-eslint/explicit-function-return-type": "off",
 		"@typescript-eslint/explicit-module-boundary-type": "off",
+		// Must override some standard eslint rules with equivalents from the typescript plugin
+		"no-unused-vars": "off",
+		"no-use-before-define": "off",
+		"@typescript-eslint/no-unused-vars": ["error"],
+		"@typescript-eslint/no-use-before-define": ["error"],
 		//# "jsdoc" rules
 		"jsdoc/require-jsdoc": [
 			"warn",
@@ -91,6 +95,8 @@ module.exports = {
 		],
 		"jsdoc/no-undefined-types": "off",
 		"jsdoc/no-types": ["error"],
+		"jsdoc/require-param-type": "off",
+		"jsdoc/require-returns-type": "off",
 		//# "prefer arrow function" rules
 		"prefer-arrow/prefer-arrow-functions": [
 			"error",
