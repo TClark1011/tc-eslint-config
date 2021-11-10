@@ -25,8 +25,10 @@ module.exports = {
 		"radar",
 		"fp",
 		"const-case",
+		"prettier",
 	],
 	"rules": {
+		"prettier/prettier": "error",
 		"indent": [
 			"error",
 			"tab",

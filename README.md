@@ -32,9 +32,9 @@ This eslint config extends the airbnb 'base' config and its corresponding typesc
 
 If you have already setup eslint, skip to step 4.
 
-## 1. Install Base Packages
+## 1. Install Package
 
-`yarn add --dev eslint prettier prettier-eslint`
+`yarn add --dev eslint`
 
 ## 2. Setup Initial ESLint
 
@@ -53,9 +53,9 @@ Create a file name `.prettierrc` and copy the following into it:
 }
 ```
 
-### 4. Add Config Package:
+### 4. Install Config Package (with Peer Dependencies):
 
-`yarn add --dev eslint-config-thomas-clark`
+`npx install peer-deps --yarn --dev eslint-config-thomas-clark`
 
 ### 5. Extend config:
 
@@ -92,7 +92,7 @@ To make use of the `compat` eslint plugin you must fill out the `"browserlist"` 
 
 You can also disable `compat` by adding this to your rules:
 
-```json
+```javascript
 'compat/compat': 'off',
 ```
 
@@ -108,22 +108,22 @@ These are some changes you may want to make to the rules. Add these inside the "
 #### Disable jsdoc requirement:
 
 ```javascript
-"jsdoc/require-jsdoc": "off"
+'jsdoc/require-jsdoc': 'off'
 ```
 
 #### Allow Mutating Methods
 ```javascript
-"fp/no-mutating-methods": "off"
+'fp/no-mutating-methods': 'off'
 ```
 
 #### Change to Single Quotes
 
 ```javascript
-quotes: ["error", "single"]
+quotes: ['error', 'single']
 ```
 
 #### Disable Static const Naming Scheme
 ```javascript
-"const-case/uppercase": "off"
+'const-case/uppercase': 'off'
 ```
 

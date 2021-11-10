@@ -13,9 +13,10 @@
 		"check:js": "eslint --print-config test/index.js",
 		"check:jsx": "eslint --print-config test/index.jsx"
 	},
-	"dependencies": {
+	"peerDependencies": {
 		"@typescript-eslint/eslint-plugin": "^4.29.3",
 		"@typescript-eslint/parser": "^4.29.3",
+		"eslint": "^7.2.0",
 		"eslint-config-airbnb": "18.2.1",
 		"eslint-config-airbnb-typescript": "^14.0.0",
 		"eslint-config-prettier": "^8.3.0",
@@ -28,16 +29,33 @@
 		"eslint-plugin-jsx-a11y": "^6.4.1",
 		"eslint-plugin-no-secrets": "^0.8.9",
 		"eslint-plugin-prefer-arrow": "^1.2.3",
+		"eslint-plugin-prettier": "^4.0.0",
 		"eslint-plugin-promise": "^5.1.0",
 		"eslint-plugin-radar": "^0.2.1",
 		"eslint-plugin-react": "^7.21.5",
 		"eslint-plugin-react-hooks": "^1.7.0"
 	},
-	"peerDependencies": {
-		"eslint": "^7.2.0"
-	},
 	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^4.29.3",
+		"@typescript-eslint/parser": "^4.29.3",
 		"eslint": "^7.2.0",
-		"typescript": "^4.4.3"
+		"eslint-config-airbnb": "18.2.1",
+		"eslint-config-airbnb-typescript": "^14.0.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-compat": "^3.13.0",
+		"eslint-plugin-const-case": "^1.2.2",
+		"eslint-plugin-eslint-comments": "^3.2.0",
+		"eslint-plugin-fp": "^2.3.0",
+		"eslint-plugin-import": "^2.22.1",
+		"eslint-plugin-jsdoc": "^32.3.0",
+		"eslint-plugin-jsx-a11y": "^6.4.1",
+		"eslint-plugin-no-secrets": "^0.8.9",
+		"eslint-plugin-prefer-arrow": "^1.2.3",
+		"eslint-plugin-prettier": "^4.0.0",
+		"eslint-plugin-promise": "^5.1.0",
+		"eslint-plugin-radar": "^0.2.1",
+		"eslint-plugin-react": "^7.21.5",
+		"eslint-plugin-react-hooks": "^1.7.0",
+		"typescript": "^4.4.4"
 	}
 }
